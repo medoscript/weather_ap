@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    justify-content: center;
+    background: #ff7e5f;
+    background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+}
+
+.weatherCard{
+    background-color: lightcyan;
+    width: 400px;
+    box-sizing: border-box;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.weatherCard > p{
+    width: 100%;
+}
+
+.info{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.infoApi{
+    color: #ff7e5f;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #fff;
+    border-bottom-color: #ff3c00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 0.7s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
